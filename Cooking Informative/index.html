@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
+        <link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.less">
+        <link rel="stylesheet" href="css/standardStyle.css">
+        <link rel="stylesheet" href="css/styleForHomePage.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <a class="navbar-brand" href="index.html">Cooking<br>Informative</a>
+                        <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cook-about.html"><i class="fa fa-info"></i> About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle-active" href="recipe.html" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list"></i> Recipes</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="recipe.html">Chicken Pasta</a>
+                                <a class="dropdown-item" href="recipe.html">Chicken Casserole</a>
+                                <a class="dropdown-item" href="recipe.html">Grilled Fish Tacos</a>
+                                <a class="dropdown-item" href="recipe.html">Lamb-Burger</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cook-contact.html"><i class="fa fa-address-card"></i> Contact</a></li>
+                    </ul>
+                    <div>
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#logintype"><i class="fas fa-sign-in-alt"></i> Login </a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="modal fade bd-example-modal-lg" id="logintype" tabindex="-1" role="dialog" aria-labelledby="logintype" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="username" placeholder="Username" >
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" >
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberLogin">
+                                        <label class="form-check-label" for="rememberLogin">Remember Me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  col-md-11 offset-md-9">
+                                <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" id="checklog">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="jumbotron">
+            <div>
+                <div class="row row-header">
+                    <div class="col-12 col-sm-6">
+                        <h1>Cooking Informative</h1>
+                        <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row row-content">
+            <div class="col-12">
+                <div id="carouselForCook" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselForCook" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselForCook" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="slideOne">
+                            <img class="d-block w-100 img-fluid" src="img/chicken-pasta.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Mediterranean Chicken Pasta Bake <span class="badge badge-danger">Hot</span> <span class="badge badge-pill badge-secondary">$4.99</span></h3>
+                                <p class="d-none d-md-block">Inspired by the fresh flavors of the Mediterranean, this pasta bake is packed with tomatoes, spinach and olives and gets an extra-creamy touch from feta cheese.!!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="slideTwo">
+                            <img class="d-block w-100" src="img/grilled-fish-tacos.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Grilled Fish Tacos<span CLASS="badge badge-danger"> NEW</span></h3>
+                                <p class="d-none d-md-block">Want to serve more fish? Here's a fast and flavorful way.!! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselForCook" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselForCook" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                    <button type="button" class="btn btn-danger"  id="carouselButton"><i class="fas fa-pause"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-3 order-sm-last col-md-2">
+                    <h3>Our Lipsmacking Culinary Creations</h3>
+                </div>
+                <div class="col col-sm order-sm-first col-md">
+                    <div class="media">
+                        <img src="img/chicken-casserole.jpg" class="img-thumbnail mr-3" alt="chicken-casserole"  width="300">
+                        <div class="media-body">
+                            <h3>Baked Potato-Smoked Chicken Casserole <span class="badge badge-danger">Hot</span> <span class="badge badge-pill badge-secondary">$4.99</span></h3>
+                            <p class="d-none d-md-block">Chicken casserole gets a tasty upgrade with baked red potatoes and barbecue sauce...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-3 order-sm-last col-md-2">
+                    <h3>This Month's Promotions</h3>
+                </div>
+                <div class=" col col-sm col-md">
+                    <div class="media">
+                        <img class="order-sm-first img-thumbnail mr-3" src="img/lamb-burger.jpg" alt="lamb-burger" width="300">
+                        <div class="media-body">
+                            <h3>Best-Ever Lamb Burger<span CLASS="badge badge-danger">NEW</span></h3>
+                            <p class="d-none d-md-block">Sure, cheeseburgers are delicious. Sometimes though, we like to switch it up. These Greek(ish) lamb burgers are full of flavor and a cinch to make! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="card">
+                        <a href="recipe.html"><img class="card-img-top" src="img/chicken-casserole.jpg" alt="image"></a>
+                        <div class="card-body">
+                            </a>
+                            <h5 class="card-title">Baked Potato-Smoked Chicken Casserole
+                                <small class="text-muted">Serves 8</small>
+                            </h5>
+                            <p class="card-text">Chicken casserole gets a tasty upgrade with baked red potatoes and barbecue sauce..</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <b>Total Time: 1 Hour 10 Minutes</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="card">
+                        <a href="recipe.html"><img class="card-img-top" src="img/chicken-pasta.jpg" alt="image"></a>
+                        <div class="card-body">
+                            </a>
+                            <h5 class="card-title">Mediterranean Chicken Pasta Bake
+                                <small class="text-muted">Serves 8</small>
+                            </h5>
+                            <p class="card-text">Inspired by the fresh flavors of the Mediterranean, this pasta bake is packed with tomatoes, spinach and olives and cheese.!!</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <b>Total Time: 1 Hour 20 Minutes</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="card">
+                        <a href="recipe.html"><img class="card-img-top" src="img/grilled-fish-tacos.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Fish Tacos
+                                <small class="text-muted">Serves 8</small>
+                            </h5>
+                            <p class="card-text">Want to serve more fish? Here's a fast and flavorful way of having a bite at the grilled fish tacos..!!</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <b>Total Time: 20 Minutes</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="card">
+                        <a href="recipe.html"><img class="card-img-top" src="img/lamb-burger.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Best-Ever Lamb Burger
+                                <small class="text-muted">Serves 4</small>
+                            </h5>
+                            <p class="card-text">Sure, cheeseburgers are delicious. Sometimes though, we like to switch it up. These Greek(ish) lamb burgers are full of flavor and a cinch to make!</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <b>Total Time: 35 Minutes</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cook-about.html">About</a></li>
+                            <li><a href="recipe.html">Recipes</a></li>
+                            <li><a href="cook-contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            XXX,<br>
+                            YYY,<br>
+                            ZZZ.<br>
+                            <i class="fa fa-phone fa-lg"></i>: +123 456 789<br>
+                            <i class="fa fa-fax fa-lg"></i>: +123 456 789<br>
+                            <i class="fa fa-envelope fa-lg"></i><a href="mailto:cooking_informative@food.net">: cooking_informative@food.net</a>
+                        </address>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-social-icon btn-reddit"><i class="fab fa-youtube"></i></a>
+                            <a href="mailto:"><i class="btn btn-social-icon btn-flickr">Mail</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p style="font-size: 20px;text-align: center;"><br><b>-Done by,<br>Saeed Al Ali,ID-14951 and Rashid Darwish,ID-14978</b></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+        	$(document).ready(function(){
+        		$('#checklog').click(function(){
+        			var username = $('#username').val();
+        			var password = $('#password').val();
+        			if(username=='' || password==''){
+        				alert("Both the fields are required..!!");
+        			}
+        		});
+        	});
+		</script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="JS/javascriptForHomePage.js"></script>
+    </body>
+</html>

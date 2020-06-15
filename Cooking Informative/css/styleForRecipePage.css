@@ -1,0 +1,13 @@
+.container section, .container .col-3{
+    background-color: #f2f2f2;
+}
+
+section .col h2, section .col-6 h3 ,section .col-4 h3,p{
+	text-align: center;
+
+}
+
+section p{
+	font-size: 18px;
+	font-weight: bold;
+}
