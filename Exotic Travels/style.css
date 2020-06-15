@@ -1,0 +1,135 @@
+div.container{
+ width: 960px;
+ height: 960px;
+ margin: auto;
+ background-color: rgb(255, 255, 255);
+ font-family: 'Tahoma', sans-serif;
+ font-size: 17px;
+}
+
+
+div.News{
+	float: left;
+	width: 30%;
+	height: 500px;
+	background-color: rgb(204, 204, 204);	
+	padding-left:2%;
+	margin-right: 2%;
+}
+
+body{
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-size: 87.5%; 
+	font-family: 'Arial';
+	line-height: 1.5;
+	text-align: left;
+}
+
+div.brief{
+	float: right;
+	font-size: 12px;
+	padding-right: 5%;
+	font-family: 'Tahoma';
+}
+
+
+
+p {
+  font-size: 50px;
+  font-family: 'Alboni Sans Regular';
+  color: rgb(179, 179, 179);
+  margin-bottom: 0px;
+}
+
+a{
+	color:white;
+}
+
+.body{
+	max-width: 700px;
+  	margin: auto;
+  	margin-top: 0px;
+  	color: rgb(0,0,0);
+}
+
+.container{
+	max-width: 700px;
+	background-color: rgb(255,255,255); 
+  	margin: auto;  
+  	padding-left: 3%; 
+  	padding-right: 3%;
+  	line-height: 15px;        
+  	margin-top: 0px;
+}
+
+
+.mainheader nav {
+  float: left;
+  width: 30%;
+  height: 150px; 
+  background: linear-gradient(to top left, #cc0000 45%, #ffff00 100%);
+  padding: 20px;
+  color: white;
+  margin-top: 0px;
+}
+
+.mainheader p{
+	height: 40px;
+	background-color: rgb(51, 204, 0);
+	font-size: 160%;
+	text-align: center;
+	margin-top: 0px;
+}
+
+
+.News p{
+	font-size: 12px;
+	line-height: 15px;
+	color: rgb(77, 77, 77);
+}
+
+.brief p{
+	font-size: 12px;
+	line-height: 15px;
+	padding-left: 25px;
+	color: rgb(0,0,0);
+}
+
+.dest{
+  width: 200px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about p{
+	font-size: 12px;
+	font-family: 'Tahoma';
+	line-height: 17px;
+	color: rgb(0,0,0);
+}
+
+.booking form,p{
+	font-size: 15px;
+	font-family: 'Tahoma';
+	line-height: 25px;
+	color: rgb(0,0,0);
+}
+
+.dest p{
+	font-size: 13px;
+	color: rgb(0,0,0);
+}
+
+.header{
+	max-width: 100px;
+	margin: auto;
+}
+
+.mainheader{
+	max-width: 600px;
+	margin-bottom: 10px;
+}
