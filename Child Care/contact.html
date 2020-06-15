@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		button, button a{
+			padding: 15px;
+			background-color: #33ccff;
+			color: #000;
+			font-family: 'Acme', sans-serif;
+			border-radius: 15px;
+		}
+	</style>
+	<script>
+		function validateForm() {
+		  var name = document.forms["myForm"]["name"].value;
+		  var email = document.forms["myForm"]["email"].value;
+		  var phone= document.forms["myForm"]["phone"].value;
+		  var address= document.forms["myForm"]["address"].value;
+		  var zip= document.forms["myForm"]["zipcode"].value;
+		  if (name == "" || email == "" || phone == "" || address == "" || zip == "") {
+		    alert("Enter all the fields");
+		    return false;
+		  }
+		}
+	</script>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="header">
+
+			<div class="header-heading">
+				<h1 style="color: #fff;text-align: center;">CHILD CARE</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Services</a></li>
+					<li><a href="locate.html">Locate</a></li>
+					<li><a href="review.html">Review</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html" class=active>Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<img src="images/cover6.jpg" width="1200" height="400">
+
+		<form name="myForm" onsubmit="return validateForm()" method = "post">
+			<h2 style="text-align: center;"><u>Write to Us:</u></h2>
+			<p>Name</p><input type="text" name="name" placeholder="Enter Name">
+			<p>Email</p><input type="email" name="email" placeholder="Enter Email">
+			<p>Telephone</p><input type="text" name="phone" placeholder="Enter your number">
+			<p>Address</p><input type="text" name="address" placeholder="Enter Address">
+			<p>Zip Code</p><input type="text" name="zipcode" placeholder="Enter Zip Code"><br><br>
+			<input onclick="contact.html" type="submit" style="background-color: #33ccff">
+		</form>
+
+		<div class="details">
+			<h2 style="text-align: center;"><u>Contact Us:</u></h2><br>
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<h2>support.childcare@email.com</h2><br>
+			<i class="fa fa-phone-square" aria-hidden="true"></i>
+			<h2>+1234567890</h2><br>
+			<i class="fa fa-address-card" aria-hidden="true"></i>
+			<h2>XXX,YYY,ZZZ.</h2>
+		</div>
+		
+		<iframe src="https://www.google.com/maps/d/embed?mid=1G4pFo9673D-ONQFfuXfZJHTK0P4" width="1195" height="450"></iframe>
+
+		<div class="footer">
+			<div class="foot">
+				<h3 style="padding: 50px;">CHILD CARE</h3>
+			</div>
+			<div class="foot">
+				<h2>NEWSLETTER</h2>
+				<p>Keep up with our always upcoming programs and latest news. <br>Enter your e-mail and subscribe to our newsletter.</p>
+				<div>
+					<input type="text" name="newsletter">
+					<button type="submit">Send</button>
+				</div>
+			</div>
+			<div class="foot">
+				<h2 style="text-align: center;"><u>Contact Us:</u></h2>
+				<i class="fa fa-envelope" aria-hidden="true"><span>  -  support.childcare@email.com</span></i><br>		
+				<i class="fa fa-phone-square" aria-hidden="true"><span>   -   +1234567890</span></i><br>				
+				<i class="fa fa-address-card" aria-hidden="true"><span>  -  XXX,YYY,ZZZ.</span></i>
+				
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
